@@ -2,6 +2,37 @@ const portosPorEstado = [
   0, 0, 1, 1, 1, 3, 1, 0, 2, 0, 1, 0, 0, 0, 3, 1, 2, 2, 0, 5, 2, 3, 1, 1, 4,
   2, 0, 0];
 
+  const bandeiras = [
+    "https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-acre-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-alagoas-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-amapa-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-amazonas-600x428.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-bahia-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-ceara-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-espirito-santo-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-goias-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-do-maranhao-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-mato-grosso-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-mato-grosso-do-sul-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-minas-gerais-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-pa-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-paraiba-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-parana-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-pernambuco-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-piaui-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-rio-de-janeiro-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-rio-grande-do-norte-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-rio-grande-do-sul-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-rondonia-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-de-roraima-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-santa-catarina-600x436.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-sao-paulo-600x400.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-sergipe-600x420.png",
+    "https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-tocantins-600x420.png"
+  ]
+
 // Variável para armazenar o número total de portos públicos
 let totalPortos = 0;
 
@@ -37,6 +68,9 @@ function atualizarPorcentagem() {
       2
     )}% do total de portos públicos organizados do Brasil.`;
   }
+
+  const bandeira = document.getElementById("bandeira");
+  bandeira.src = bandeiras[index];
 }
 
 function getNomeEstado(index) {

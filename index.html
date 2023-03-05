@@ -6,7 +6,11 @@
     <title>Porcentagem de Portos por Estado</title>
   </head>
   <body>
+    <header>
     <h1>Porcentagem de Portos Públicos por Estado</h1>
+    </header>
+
+    <section>
     <label for="estado">Selecione um estado:</label>
     <select id="estado">
       <option value="0">Todos os estados</option>
@@ -39,8 +43,12 @@
       <option value="27">Tocantins</option>
     </select>
     <br /><br />
-    <button onclick="atualizarPorcentagem()">Mostrar porcentagem</button>
+    <button class="btn first" onclick="atualizarPorcentagem()">Mostrar porcentagem</button>
     <p id="porcentagem"></p>
+    <div id="bandeira-container">
+      <img id="bandeira" src="BR.png">
+    </div>    
+    </section>
 
     <script src="script.js"></script>
   </body>
