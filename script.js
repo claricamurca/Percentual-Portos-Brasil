@@ -44,17 +44,17 @@ function atualizarPorcentagem() {
   let porcentagem;
 
   if (index == 0) {
-    document.getElementById("porcentagem").innerHTML = "";
+    document.getElementById("Texto_porcentagem").innerHTML = "";
     for (let i = 1; i < portosPorEstado.length; i++) {
       porcentagem = (portosPorEstado[i] / totalPortos) * 100;
       nomeEstado = getNomeEstado(i);
-      document.getElementById("porcentagem").innerHTML 
+      document.getElementById("Texto_porcentagem").innerHTML 
       += `${nomeEstado} = ${porcentagem.toFixed(2)}% <br>`;
     }
   } else {
     porcentagem = (portosPorEstado[index] / totalPortos) * 100;
     nomeEstado = getNomeEstado(index);
-    document.getElementById("porcentagem")
+    document.getElementById("Texto_porcentagem")
     .textContent = `O estado ${nomeEstado} tem ${portosPorEstado[index]} porto(s), isso representa 
     ${porcentagem.toFixed(2)}% do total de portos públicos organizados do Brasil.`;
   }
