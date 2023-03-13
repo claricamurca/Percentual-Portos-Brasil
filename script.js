@@ -48,21 +48,15 @@ function atualizarPorcentagem() {
     for (let i = 1; i < portosPorEstado.length; i++) {
       porcentagem = (portosPorEstado[i] / totalPortos) * 100;
       nomeEstado = getNomeEstado(i);
-      document.getElementById(
-        "porcentagem"
-      ).innerHTML += `${nomeEstado} = ${porcentagem.toFixed(2)}% <br>`;
+      document.getElementById("porcentagem").innerHTML 
+      += `${nomeEstado} = ${porcentagem.toFixed(2)}% <br>`;
     }
   } else {
     porcentagem = (portosPorEstado[index] / totalPortos) * 100;
     nomeEstado = getNomeEstado(index);
-    document.getElementById(
-      "porcentagem"
-    ).textContent = `O estado ${nomeEstado} tem ${
-      portosPorEstado[index]
-    } porto(s), isso representa 
-    ${porcentagem.toFixed(
-      2
-    )}% do total de portos públicos organizados do Brasil.`;
+    document.getElementById("porcentagem")
+    .textContent = `O estado ${nomeEstado} tem ${portosPorEstado[index]} porto(s), isso representa 
+    ${porcentagem.toFixed(2)}% do total de portos públicos organizados do Brasil.`;
   }
 
   const bandeira = document.getElementById("bandeira");
